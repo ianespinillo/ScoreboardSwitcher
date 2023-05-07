@@ -1,0 +1,101 @@
+.Banner{
+    display: flex;
+    justify-content: center;
+}
+body{
+    background-image: url("Inicio/Fondo_Banner_2.png");
+    background-position: center;
+    background-size: 100vw;
+    scroll-behavior: smooth;
+}
+.Confederaciones{
+    text-align: center;
+    position: relative;
+}
+.Boton_ver_mas{
+    color: #680a4d;
+    background: #c99e53;
+    border: 1px #c99e53;
+    font-size: 30px;
+    border-radius: 15px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin: 0 auto;
+    display: block;
+    transition: 0.35s all;
+    
+    
+}
+.Boton_ver_mas:hover{
+    color:#c99e53;
+    border: 5px solid #c99e53;
+    background: transparent;
+    font-size: 30px;
+}
+html{
+    scroll-behavior: smooth;
+}
+#confederaciones {
+    background: var(--blanco);
+    color: var(--negro);
+}
+
+#confederaciones>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#confederaciones>div>div:last-child {
+    grid-column: 2 / 3;
+    grid-row: 3;
+}
+
+#confederaciones .logoConfederacion:hover {
+    cursor: pointer;
+}
+
+#confederaciones>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#confederaciones>div>div img:hover {
+    transition: .35s all;
+    filter: brightness(1);
+    transform: scale(1.05);
+}
+
+#confederaciones>div>div img {
+    transition: .35s all;
+    filter: brightness(.7);
+    transform: scale(1);
+}
+
+#confederaciones>div>div img:hover+.nombreConfederacion {
+    transition: .35s all;
+    filter: opacity(1);
+    /* transform: scale(1); */
+}
+
+#confederaciones .nombreConfederacion {
+    transition: .35s all;
+    filter: opacity(0);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(186deg, #f4c05b 0%, #af6c37 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* transform: scale(0.01);
+    transform-origin: center; */
+}
+a{
+    text-decoration: none;
+}

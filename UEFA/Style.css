@@ -1,0 +1,10 @@
+body{
+    background-image: url("Uefa/fondo.png");
+    background-position: center;
+    background-size: 100vw;
+}
+#branding{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
