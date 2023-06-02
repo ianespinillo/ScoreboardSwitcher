@@ -1,0 +1,71 @@
+body{
+    background-image: url(../Images/AFC/ASIA/Banner\ 2.png);
+}
+.logotop{
+display: flex;
+justify-content: center;
+}
+#AFC{
+    background: var(--blanco);
+    color: var(--blanco);
+
+}   
+#AFC>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#AFC>div>div:last-child {
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+
+#AFC .logoConfederacion:hover {
+    cursor: pointer;
+}
+
+#AFC>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#AFC>div>div img:hover {
+    transition: .35s all;
+    filter: brightness(1);
+    transform: scale(.9);
+}
+
+#AFC>div>div img {
+    transition: .35s all;
+    filter: brightness(.7);
+    transform: scale(0.8);
+}
+
+
+#AFC .nombrePais {
+    transition: .35s all;
+    filter: opacity(0);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(186deg, #f4c05b 0%, #af6c37 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* transform: scale(0.01);
+    transform-origin: center; */
+}
+.logoPais{
+    width: 100%;
+    height: 100%;
+}
+#header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}

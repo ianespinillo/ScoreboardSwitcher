@@ -1,0 +1,26 @@
+body{
+    background-image: url(../Images/OFC/banner\ 2.png);
+}
+img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.logoPais:hover {
+    transition: .35s all;
+    filter: brightness(1);
+    transform: scale(.9);
+    cursor: pointer;
+}
+
+.logoPais {
+    transition: .35s all;
+    filter: brightness(.7);
+    transform: scale(0.8);
+}
+#header{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}

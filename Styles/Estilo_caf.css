@@ -1,0 +1,57 @@
+body{
+    background-image: url(../Images/CAF/Fondo.png);
+}
+#Logo{
+    width: 30%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+#caf{
+    background: var(--blanco);
+    color: var(--blanco);
+
+}   
+#caf>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#caf>div>div:last-child {
+    grid-column: 2 / 3;
+    grid-row: 4;
+}
+
+#caf .logoConfederacion:hover {
+    cursor: pointer;
+}
+
+#caf>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#caf>div>div img:hover {
+    transition: .35s all;
+    filter: brightness(1);
+    transform: scale(.9);
+}
+
+#caf>div>div img {
+    transition: .35s all;
+    filter: brightness(.7);
+    transform: scale(0.8);
+}
+.logoPais{
+    width: 100%;
+    height: 100%;
+}
+header img{
+    display: block;
+    margin: auto;
+}

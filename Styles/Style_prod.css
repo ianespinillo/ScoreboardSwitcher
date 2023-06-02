@@ -1,0 +1,92 @@
+@font-face {
+    font-family: Qatar22;
+    src: url(../Font/qatar-2022-font/Qatar2022-Medium.otf);
+}
+html{
+    background-image: url("../../../Images/inicio/Fondo_Banner_2.png");
+    width: 100vw;
+    
+}
+main {
+    background-color: white;
+}
+a{
+    text-decoration: none;
+}
+.minilogos{
+    display: inline-block;
+    margin-top: 30%;
+}
+img#btnInicio {
+    width: 7%;
+    display: flex;
+}
+#article{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+}
+#article>div{
+    border: 3px solid grey;
+    border-radius: 15px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+#article>div>div{
+    margin-left: 1%;
+    margin-top: 1%;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    
+}
+p{
+    font-family: Qatar22;
+    width: 85%;
+    font-size: 20px
+}
+#article>div>div>div{
+    
+    flex-direction: column;
+}
+.Titulo{
+    justify-content: start;
+}
+#btnAdd{
+    text-align: center;
+    transition: all .5s;
+    transform: scale(1.8);
+    display: block !important;
+    margin-left: 10%;
+    margin-top: 120px;
+    cursor: pointer;
+    font-family: Qatar22;
+    padding: 10px 30px;
+    background-color: dodgerblue;
+    color: white;
+    border: 1px solid dodgerblue;
+    border-radius: 10px
+}
+
+#btnAdd:hover{
+    background-color: transparent !important;
+    color: dodgerblue !important;
+    border: 1px solid dodgerblue;
+    border-radius: 10px;
+}
+.Titulo, .precio{
+    margin-left: 5%;
+    font-family: Qatar22;
+}
+.precio {
+    color: grey;
+}
+#btnInicio{
+    display: block;
+    margin: auto;
+}
+
+#tw,#gm{
+    margin-left: 5%;
+}

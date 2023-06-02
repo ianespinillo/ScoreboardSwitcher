@@ -1,0 +1,78 @@
+body{
+    background-image: url("../Images/UEFA/Uefa/fondo.png");
+    background-position: center;
+    background-size: 100vw;
+}
+#branding{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header {
+    display: flex;
+    justify-content: center;
+    
+}
+
+header img {
+    width: 100px;
+}
+
+#uefa{
+    background: var(--blanco);
+    color: var(--blanco);
+    
+}
+#uefa>div {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#uefa>div>div:last-child {
+    grid-column: 2 / 3;
+    grid-row: 9;
+}
+
+#uefa .logoPais:hover {
+    cursor: pointer;
+}
+
+#uefa>div>div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 20px 0;
+}
+
+#uefa>div>div img:hover {
+    transition: .35s all;
+    filter: brightness(1);
+    transform: scale(.9);
+}
+
+#uefa>div>div img {
+    transition: .35s all;
+    filter: brightness(.7);
+    transform: scale(0.8);
+}
+
+
+#uefa .nombrePais {
+    transition: .35s all;
+    filter: opacity(0);
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(186deg, #f4c05b 0%, #af6c37 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    /* transform: scale(0.01);
+    transform-origin: center; */
+}
+img{
+    width: 350px;
+}
