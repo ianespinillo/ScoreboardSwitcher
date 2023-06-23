@@ -1,0 +1,66 @@
+/*hacer que el menu se convierta en un carrito de compras con hover y opacity a la tabla*/
+@font-face {
+    font-family: Qatar22;
+    src: url(../Font/qatar-2022-font/Qatar2022-Medium.otf);
+}
+
+.menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+    width: 50vw;
+}
+#carrito-list, tbody {
+    display: flex;
+    flex-direction: column;
+    width:80%;
+    align-items: center;
+    background-color: #c99e53;
+}
+#carrito{
+    filter:invert(100%);
+    margin-top: 1.5rem;
+}
+.carrito-logo{
+    display: flex;
+    justify-content: center;
+}
+.carrito-list{
+    opacity: 0;
+}
+thead, tbody {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    
+}
+tr{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+th,td{
+    font-weight: bold;
+    width: 33%;
+    text-align: center;
+    color: #640a4d;
+    font-family: Qatar22;
+}
+.carrito-logo:hover + .carrito-list{
+    display: flex;
+    opacity: 1;
+}
+.table-display{
+    opacity: 1;
+}
+.carrito-logo span{
+    font-size: 3em;
+    margin-top: 2rem;
+    margin-left: .5rem;
+    color: white;
+    font-family: Qatar22;
+}

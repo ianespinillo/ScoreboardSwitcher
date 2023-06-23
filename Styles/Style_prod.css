@@ -17,6 +17,7 @@ a{
     display: inline-block;
     margin-top: 30%;
 }
+
 img#btnInicio {
     width: 7%;
     display: flex;
@@ -25,6 +26,7 @@ img#btnInicio {
     margin-top: 5%;
     display: flex;
     justify-content: center;
+    z-index: 1;
 }
 #article>div{
     border: 3px solid grey;
@@ -50,8 +52,13 @@ p{
     
     flex-direction: column;
 }
+.textos{
+    width: 100%;
+}
 .Titulo{
     justify-content: start;
+    display: flex;
+    flex-direction: row;
 }
 #btnAdd{
     text-align: center;
@@ -89,4 +96,10 @@ p{
 
 #tw,#gm{
     margin-left: 5%;
+}
+.carrito-big{
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    
 }

@@ -6,9 +6,9 @@
 .menu{
     max-width: 90%;
     display: flex;
+    justify-content: end;    
     flex-direction: row;
     align-items: center;
-    justify-content: end;    
     margin-top: 2.5%;
 }
 .menu>div a {
@@ -23,6 +23,9 @@
     border-bottom: #c99e53 0px solid;
     transition: all .3s;
 
+}
+.menu>div img {
+    margin-left: 30px;
 }
 
 
