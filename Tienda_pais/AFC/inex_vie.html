@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vietnam</title>
     <link rel="stylesheet" href="../../Styles/Tienda_pais/Conmebol/Style_arg.css">
+    <link rel="stylesheet" href="../../Styles/Carrito.css">
 </head>
 <body>
     <header>
@@ -13,13 +14,32 @@
             src="../../Images/AFC/ASIA/Country_page/Vietnam.png"
             width="100%"
         >
+        <div class="menu">
+            <div class="carrito-logo">
+                <img src="../../../Images/Inicio/carrito-de-compras.png" id="carrito">
+                <span>0</span>
+            </div>
+            
+            <table id="carrito-list" class="carrito-list">
+                <thead>
+                    <tr>
+                        <th>Logo</th>
+                        <th>League</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+                <tfoot></tfoot>
+                <!-- <a href="#" class="vaciar-carrito">Delete all</a> -->
+            </table>
+        </div>
     </header>
     <main>
         <section id="tienda">
             <div>
                 <div>
                     <div>
-                        <a href="">
+                        <a href="Vietnam/V1.html">
                             <div class="container">
                                 <img 
                                     src="../../Images/Store/DB/VIETNAM/V1/PREVIEW.png" 
@@ -37,5 +57,6 @@
     <footer>
         
     </footer>
+    <script src="../../Script/Carrito.js"></script>
 </body>
 </html>

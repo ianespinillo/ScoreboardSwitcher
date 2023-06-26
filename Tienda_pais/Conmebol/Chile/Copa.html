@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Copa Axion Energy</title>
+    <title>Copa Chile</title>
     <link rel="stylesheet" href="../../../Styles/Style_prod.css">
+    <link rel="stylesheet" href="../../../Styles/Carrito.css">
 </head>
 <body>
     <header>
@@ -17,6 +18,25 @@
                     width="40%"
                     >
             </a>
+            <div class="menu">
+                <div class="carrito-logo">
+                    <img src="../../../Images/Inicio/carrito-de-compras.png" id="carrito">
+                    <span>0</span>
+                </div>
+                
+                <table id="carrito-list" class="carrito-list">
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>League</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+<tfoot></tfoot>
+                    <!-- <a href="#" class="vaciar-carrito">Delete all</a> -->
+                </table>
+            </div>
         </nav>
     </header>
     <main>
@@ -28,16 +48,17 @@
                             src="../../../Images/Store/DB/ARG/COPA ARGENTINA/PREVIEW.png" 
                             class="img"
                         >
-                        <p>Scoreboard from Copa Axion Energy Argentina, the national cup of Argentina</p>
+                        <p>Scoreboard from Copa Chile, the national cup of Chile</p>
                     </div>
                     <div class="textos">
                         <div class="Titulo">
-                            <h1>Liga Profesional De Fútbol</h1>
+                            <h1>Copa Chile</h1>
+                            <img src="../../../Images/Logos_competencia/Copa_Chile.png" class="competencia">
                         </div>
                         <div class="precio">
-                            <h3>Prize: $17</h3>
+                            <h3>Prize: $<span>17</span></h3>
                         </div>
-                        <input type="button" value="Add to cest" id="btnAdd">
+                        <input type="button" value="Add to cest" id="btnAdd" class="btnAdd">
                         <div class="minilogos">
                             <a href=""><img 
                                 src="../../../Images/Minilogos/ds.png"
@@ -65,5 +86,6 @@
         </section>
     </main>
     <footer></footer>
+    <script src="../../../Script/Carrito.js"></script>
 </body>
 </html>

@@ -4,11 +4,12 @@
 }
 html{
     background-image: url("../../../Images/inicio/Fondo_Banner_2.png");
-    width: 100vw;
+    background-position: center;
+    background-size: 100vw;
     
 }
 main {
-    background-color: white;
+    background-color: rgb(225, 224, 224);
 }
 a{
     text-decoration: none;
@@ -97,9 +98,6 @@ p{
 #tw,#gm{
     margin-left: 5%;
 }
-.carrito-big{
-    width: 100vw;
-    height: 100vh;
-    z-index: 2;
-    
+.competencia{
+    margin-left: 5%;
 }

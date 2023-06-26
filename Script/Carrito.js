@@ -3,7 +3,9 @@ const btnVaciar= document.querySelector('#vaciar-carrito');
 const producto= document.querySelector('#article');
 const vaciarBtn = document.querySelector('.vaciar-carrito');
 const carritoLogo= document.querySelector('.carrito-logo');
+const rowTotal= document.querySelector('#carrito-list tfoot');
 let articulos=[];
+let precioFinal = 0;
 
 
 
@@ -12,6 +14,7 @@ function cargarEventListener(){
     document.addEventListener('DOMContentLoaded',() => {
         articulos= JSON.parse(localStorage.getItem('carrito')) || [];
         carritoHTML();
+        
     });
     producto.addEventListener('click', agregarProducto);
 }
@@ -31,7 +34,8 @@ function leerProducto(producto){
         price: producto.querySelector('.precio span').textContent,
     }
     console.log(productoSeleccion);
-
+    const precio = Number(productoSeleccion.price);
+    precioFinal += precio;
     articulos = [...articulos, productoSeleccion];
     carritoHTML();
 }
@@ -39,28 +43,37 @@ function leerProducto(producto){
 function carritoHTML () {
     
     limpiarHTML();
-    
     articulos.forEach( producto => {
         const { league, price, logo } = producto
         const fila= document.createElement('tr');
         fila.innerHTML= `
-            <td>
-                <img src="${logo}" class="logo" style= "width: 80px; height 80px; display: block; margin: auto"/>
-            </td>
-            <td>
-                ${league}
-            </td>
-            <td>
-                ${price}
-            </td>
-            `
+        <td>
+        <img src="${logo}" class="logo" style= "width: 80px; height 80px; display: block; margin: auto"/>
+        </td>
+        <td>
+        ${league}
+        </td>
+        <td>
+        ${price}
+        </td>
+        `
+        
         carrito.appendChild(fila);
-    }) 
+    });
+    const newRow= document.createElement('tr');
+    newRow.innerHTML = `
+    <td></td>
+    <td></td>
+    <td>Total: $${precioFinal}</td>
+    `
+    rowTotal.appendChild(newRow);
     aumentarSpan();
     cargarStorage();
 }
 function limpiarHTML(){
-
+    while(rowTotal.firstChild){
+        rowTotal.removeChild(rowTotal.firstChild);
+    }
     while(carrito.firstChild){
         carrito.removeChild(carrito.firstChild);
     }

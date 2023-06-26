@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Série C</title>
     <link rel="stylesheet" href="../../../Styles/Style_prod.css">
+    <link rel="stylesheet" href="../../../Styles/Carrito.css">
 </head>
 <body>
     <header>
@@ -17,6 +18,25 @@
                     width="40%"
                     >
             </a>
+            <div class="menu">
+                <div class="carrito-logo">
+                    <img src="../../../Images/Inicio/carrito-de-compras.png" id="carrito">
+                    <span>0</span>
+                </div>
+                
+                <table id="carrito-list" class="carrito-list">
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>League</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+<tfoot></tfoot>
+                    <!-- <a href="#" class="vaciar-carrito">Delete all</a> -->
+                </table>
+            </div>
         </nav>
     </header>
     <main>
@@ -32,12 +52,13 @@
                     </div>
                     <div class="textos">
                         <div class="Titulo">
-                            <h1>Série D</h1>
+                            <h1>Brasileirao Série C</h1>
+                            <img src="../../../Images/Logos_competencia/SerieC.png" class="competencia">
                         </div>
                         <div class="precio">
-                            <h3>Prize: $18</h3>
+                            <h3>Prize: $<span>18</span></h3>
                         </div>
-                        <input type="button" value="Add to cest" id="btnAdd">
+                        <input type="button" value="Add to cest" id="btnAdd" class="btnAdd">
                         <div class="minilogos">
                             <a href=""><img 
                                 src="../../../Images/Minilogos/ds.png"
@@ -63,6 +84,7 @@
                 </div>
             </div>
         </section>
+        <script src="../../../Script/Carrito.js"></script>
     </main>
     <footer></footer>
 </body>

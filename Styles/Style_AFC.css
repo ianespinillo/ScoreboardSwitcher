@@ -17,7 +17,7 @@ justify-content: center;
 
 #AFC>div>div:last-child {
     grid-column: 2 / 3;
-    grid-row: 4;
+    grid-row: 3;
 }
 
 #AFC .logoConfederacion:hover {

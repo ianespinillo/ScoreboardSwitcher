@@ -32,7 +32,7 @@
 .carrito-list{
     opacity: 0;
 }
-thead, tbody {
+thead, tbody, tfoot {
     display: flex;
     justify-content: center;
     width: 100%;

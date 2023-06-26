@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Campeonato Carioca</title>
     <link rel="stylesheet" href="../../../Styles/Style_prod.css">
+    <link rel="stylesheet" href="../../../Styles/Carrito.css">
 </head>
 <body>
     <header>
@@ -17,6 +18,25 @@
                     width="40%"
                     >
             </a>
+            <div class="menu">
+                <div class="carrito-logo">
+                    <img src="../../../Images/Inicio/carrito-de-compras.png" id="carrito">
+                    <span>0</span>
+                </div>
+                
+                <table id="carrito-list" class="carrito-list">
+                    <thead>
+                        <tr>
+                            <th>Logo</th>
+                            <th>League</th>
+                            <th>Price</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+<tfoot></tfoot>
+                    <!-- <a href="#" class="vaciar-carrito">Delete all</a> -->
+                </table>
+            </div>
         </nav>
     </header>
     <main>
@@ -25,7 +45,7 @@
                 <div>
                     <div id="imgDiv">
                         <img 
-                            src="../../../Images/Store/DB/BRA/COPA DO NORDESTE/PREVIEW.png" 
+                            src="../../../Images/Store/DB/BRA/CARIOCA/PREVIEW.png" 
                             class="img"
                         >
                         <p>Scoreboard from Campeonato Carioca, the tournament played by the teams of Rio do Janeiro from Brazil</p>
@@ -33,11 +53,12 @@
                     <div class="textos">
                         <div class="Titulo">
                             <h1>Campeonato Carioca</h1>
+                            <img src="../../../Images/Logos_competencia/Carioca_2023_FERJ.jpg" class="competencia">
                         </div>
                         <div class="precio">
-                            <h3>Prize: $15</h3>
+                            <h3>Prize: $<span>15</span></h3>
                         </div>
-                        <input type="button" value="Add to cest" id="btnAdd">
+                        <input type="button" value="Add to cest" id="btnAdd" class="btnAdd">
                         <div class="minilogos">
                             <a href=""><img 
                                 src="../../../Images/Minilogos/ds.png"
@@ -63,6 +84,7 @@
                 </div>
             </div>
         </section>
+        <script src="../../../Script/Carrito.js"></script>
     </main>
     <footer></footer>
 </body>
