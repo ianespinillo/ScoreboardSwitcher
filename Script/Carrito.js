@@ -4,6 +4,7 @@ const producto= document.querySelector('#article');
 const vaciarBtn = document.querySelector('.vaciar-carrito');
 const carritoLogo= document.querySelector('.carrito-logo');
 const rowTotal= document.querySelector('#carrito-list tfoot');
+const header = document.querySelector('head')
 let articulos=[];
 let precioFinal = 0;
 
@@ -67,6 +68,7 @@ function carritoHTML () {
     <td>Total: $${precioFinal}</td>
     `
     rowTotal.appendChild(newRow);
+    
     aumentarSpan();
     cargarStorage();
 }
@@ -77,6 +79,7 @@ function limpiarHTML(){
     while(carrito.firstChild){
         carrito.removeChild(carrito.firstChild);
     }
+
 }
 
 /* vaciarBtn.addEventListener('click', borrarTodo); */
