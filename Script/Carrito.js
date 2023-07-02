@@ -1,3 +1,4 @@
+
 const carrito= document.querySelector('#carrito-list tbody');
 const btnVaciar= document.querySelector('#vaciar-carrito');
 const producto= document.querySelector('#article');
@@ -14,6 +15,7 @@ cargarEventListener();
 function cargarEventListener(){
     document.addEventListener('DOMContentLoaded',() => {
         articulos= JSON.parse(localStorage.getItem('carrito')) || [];
+        precioFinal= JSON.parse(localStorage.getItem('precioTotal')) || 0;
         carritoHTML();
         
     });
@@ -55,10 +57,9 @@ function carritoHTML () {
         ${league}
         </td>
         <td>
-        ${price}
+        $${price}
         </td>
         `
-        
         carrito.appendChild(fila);
     });
     const newRow= document.createElement('tr');
@@ -90,6 +91,7 @@ function borrarTodo(){
 }
 function cargarStorage(){
     localStorage.setItem('carrito', JSON.stringify(articulos));
+    localStorage.setItem('precioTotal', JSON.stringify(precioFinal));
 }
 function aumentarSpan(){
     let cantidad = 0;

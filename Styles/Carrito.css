@@ -44,12 +44,16 @@ tr{
     justify-content: space-around;
 }
 th,td{
+    display: flex;
+    justify-content:center;
     font-weight: bold;
     width: 33%;
+    align-items: center;
     text-align: center;
     color: #640a4d;
     font-family: Qatar22;
 }
+
 .carrito-logo:hover + .carrito-list{
     display: flex;
     opacity: 1;
