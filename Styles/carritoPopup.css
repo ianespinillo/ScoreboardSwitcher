@@ -11,7 +11,7 @@
 }
 
 .modal-content {
-    background-color: #fefefe;
+    background-color: #c99e53;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
@@ -22,4 +22,39 @@
 }
 .none{
     display: none;
+}
+#modalContent{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+#carritoXL{
+    width: 100%;
+    height:100%;
+    background-color: #c99e53;
+}
+#carritoXL tbody {
+    color: black;
+}
+.close{
+    cursor: pointer;
+    color: red;
+    
+}
+.botones{
+    width: 100%;
+    display: flex;
+    margin-top: 2em;
+    justify-content: space-around;
+    
+}
+
+.btn{
+    border: 2px solid #640a4d;
+    border-radius: 15px;
+    background-color: transparent;
+    color: #640a4d;
+    font-size: 1.25em;
+    cursor: pointer;
 }

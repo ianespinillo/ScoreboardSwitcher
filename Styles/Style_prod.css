@@ -30,7 +30,7 @@ img#btnInicio {
     z-index: 1;
 }
 #article>div{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -41,7 +41,7 @@ img#btnInicio {
     margin-bottom: 5%;
     margin-right: 5%;
     margin-left: 5%;
-    width: 80%;
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2,1fr);
     

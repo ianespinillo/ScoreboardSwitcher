@@ -28,6 +28,7 @@
 .carrito-logo{
     display: flex;
     justify-content: center;
+    cursor: pointer;
 }
 .carrito-list{
     opacity: 0;
