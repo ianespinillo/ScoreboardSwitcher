@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Qatar22;
+    src: url(../Font/qatar-2022-font/Qatar2022-Medium.otf);
+}
 .modal {
     display: none;
     position: fixed;
@@ -56,5 +60,6 @@
     background-color: transparent;
     color: #640a4d;
     font-size: 1.25em;
+    font-family: Qatar22;
     cursor: pointer;
 }
