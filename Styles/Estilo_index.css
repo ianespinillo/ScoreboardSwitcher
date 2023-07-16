@@ -4,33 +4,48 @@
 }
 
 .menu{
-    max-width: 90%;
+    max-width: 100%;
     display: flex;
-    justify-content: end;    
+    justify-content:end;    
     flex-direction: row;
     align-items: center;
     margin-top: 2.5%;
 }
-.menu>div a {
-    text-decoration: none;
-    color: #c99e53;
+.menu>div{
+    width: 50%;
     display: flex;
-    margin-left: 30px;
+
+}
+.menu>div>div{
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 33%;
+}
+.menu>div>div>a{
+    display: block;
+    margin: auto;
+    justify-content: center !important;
     font-family: Qatar22;
-    font-size: 20px;
-    font-weight: bold;
-    cursor: pointer;
-    border-bottom: #c99e53 0px solid;
-    transition: all .3s;
-
+    font-size: 1em;
+    color: #c99e53;
 }
-.menu>div img {
-    margin-left: 30px;
+.menu div>div::before {
+    content: "";
+    position: absolute;
+    bottom: -5px; /* Ajusta esta distancia según tus necesidades */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0%; /* Ajusta el ancho de la línea según tus necesidades */
+    height: 2px;
+    background-color: #c99e53;
+    margin-bottom: 5px;
+    
 }
 
-
-.menu>div a:hover{
-    border-bottom: #c99e53 3px solid ;
+.menu div>div:hover::before{
+    transition: all 0.3s ease-in-out;
+    width: 30%;
 }
 
 .Banner{
