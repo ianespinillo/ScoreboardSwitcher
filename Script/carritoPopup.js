@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', () => {
 cerrar.addEventListener('click', () => carritoPopup.style.display='none');
 carritoImg.addEventListener('click', () => {
     carritoPopup.style.display= 'block';
+    imprimirCarrito(); 
 });
 
 btnVaciar.addEventListener('click', () => {
