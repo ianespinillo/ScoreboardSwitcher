@@ -1,0 +1,98 @@
+@font-face {
+    font-family: Qatar22;
+    src: url(../Font/qatar-2022-font/Qatar2022-Medium.otf);
+}
+#return{
+    margin-top: 2%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #000;
+}
+#return:hover{
+  text-decoration: underline #000;
+}
+.text{
+    font-family: Qatar22;
+    font-size: 20px;
+    margin-top: 4px;
+    margin-left:8px ;
+}
+h1,h2,h3,p,tr, td {
+    font-family: Qatar22;
+    text-align: center;
+}
+main{
+    display: grid;
+    grid-template-columns: 49% 2% 49%;
+    justify-items: center;
+}
+.cest{
+    width: 80%;
+}
+td {
+    outline: 2px solid #ccc;
+}
+.box{
+    align-items: center;    
+}
+hr{
+    margin-left: 40px;
+    background-color: #ccc;
+}
+
+.custom-select {
+    
+    flex-direction: column;
+    position: relative;
+    width: 400px; /* Personaliza el ancho según tus necesidades */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  .selected-option{
+    font-family: Qatar22;
+    display: flex;
+    justify-content: space-between;
+  }
+  .select-trigger {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+    cursor: pointer;
+  }
+  .options {
+    list-style: none;
+    font-family: Qatar22;
+
+    padding: 0;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-top: none;
+    border-radius: 0 0 4px 4px;
+    display: none;
+    position: absolute;
+    width: 100%;
+    background-color: #fff;
+  }
+  .open{
+    display: block;
+  }
+  .options li {
+    padding: 8px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .options li:hover {
+    background-color: #f0f0f0;
+  }
+  .options li i{
+    margin-left: 8px;
+  }
+  .custom-select.open .options {
+    display: block;
+  }
+  
+  #mp{
+    width: 40px;
+  }

@@ -5,6 +5,7 @@ const carritoTable = document.querySelector('#carritoXL tbody');
 const cerrar = document.querySelector('.close')
 const totalRow = document.querySelector('#carritoXL tfoot')
 const btnVaciar = document.querySelector('#vaciarBtn');
+const goCheckout = document.querySelector('#pay')
 let articulos=[];
 let precioTotal=[];
 
@@ -12,7 +13,7 @@ let precioTotal=[];
 document.addEventListener('DOMContentLoaded', () => {
     articulos= JSON.parse(localStorage.getItem('carrito')) || [];
     precioTotal= JSON.parse(localStorage.getItem('precioTotal')) || [];
-    imprimirCarrito();
+    
 })
 cerrar.addEventListener('click', () => carritoPopup.style.display='none');
 carritoImg.addEventListener('click', () => {
@@ -56,5 +57,7 @@ function imprimirCarrito() {
         totalRow.appendChild(newRow);
     })
 }
-
+goCheckout.addEventListener('click',()=>{
+    window.location.href = '/Checkout.html';
+})
 })();

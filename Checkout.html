@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./Images/cart-shopping-solid.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./Styles/Checkout.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Checkout</title>
+</head>
+<body>
+    <header>
+            <a href="Index.html" id="return">
+                <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" class="bi bi-arrow-left" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                </svg>
+                <span class="text">Return to shop</span>
+            </a>
+        <h2>Your cest</h2>
+    </header>
+    <main>
+        <table class="cest" id="cest">
+            <thead>
+                <tr>
+                    <td>Logo</td>
+                    <td>League</td>
+                    <td>Price</td>
+                </tr>
+            </thead>
+            <tbody></tbody>
+            <tfoot></tfoot>
+        </table>
+        <hr>
+        <div class="box" id="box">
+            <h3>Select your pay method</h3>
+            
+            <div class="custom-select">
+                <div class="select-trigger">
+                    <span class="selected-option">Select a method of pay</span>
+                    <i class="fas fa-chevron-down" id="icon"></i>
+                </div>
+                <ul class="options">
+                    <li>PayPal <i class="fab fa-paypal"></i></li>
+                    <li>Bankary Transfer <i class="fas fa-university"></i></li>
+                    <li>Credit Card <i class="far fa-credit-card"></i></li>
+                    <li>Mercado Pago <img src="/Images/mercado-pago.svg" id="mp"></li>
+                </ul>
+            </div>
+        </div>
+        <div></div>
+        <div></div>
+        <div id="selectedMethod">
+
+        </div>
+    </main>
+    <footer></footer>
+    <script src="./Script/Checkout.js"> </script>
+    <!-- <script src="https://www.paypal.com/sdk/js?client-id=AXRFJCOMrrV03-0fhXxdXbblCaQI0dFPXtpkBRsd7a3KGJiDCWWUeL_urKqgrUzd0ZVeymbQFfs95frX&currency=USD"></script>
+    <script src="/Script/payPalAPI.js"></script> -->
+</body>
+</html>
